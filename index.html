@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hangman game project, Ivan Miceta HTML5 CSS3 JavaScript begginer/intermediate wev development project ">
+    <meta name="keywords" content="hangman game, javascript project, Ivan Miceta, GitHub portfolio,web development ">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Hangman Game</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="game-box">
+        <div class="upper-rect">
+          <p id="game-title">Hangman Game</p>
+        </div>
+        <div class="main-rect">
+          <img src="img/Hang0.png" id="image">
+          <button id="start" class="button-style">start</button>
+          <p id="goal"></p>
+        </div>
+        <div class="lower-rect">
+          <div class="user-input">
+            <label for="text">Place Guess</label>
+            <input type="text" id="inp">
+            <button id="btn" class="button-style">Enter</button>
+          </div>
+          <div class="previous-guesses">
+            <p>Previous Guesses</p>
+            <p id="disp-prev"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal hide">
+      <div class="modal-message">
+        <p class="modal-title">Congratulations, you won this round!</p>
+        <p class="modal-note">The hidden object was : <span class="modal-note-goal">Tokio</span></p>
+        <button class="button-style again">Play Again</button>
+        <button class="button-style cancel">Exit</button>
+      </div>
+    </div>
+    <audio src="sounds/start.wav" id="start-tone"></audio>
+    <audio src="sounds/miss.wav" id="miss-tone"></audio>
+    <audio src="sounds/hit.wav" id="hit-tone"></audio>
+    <audio src="sounds/win.wav" id="win-tone"></audio>
+    <audio src="sounds/lost.wav" id="lost-tone"></audio>
+    <script src="app.js"></script>
+  </body>
+
+</html>
+        
+        
