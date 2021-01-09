@@ -184,7 +184,7 @@ const states = [
 const mainObj = {};
 //Contatiner for previous guesses
 let inputsContainer = [];
-//Container for already used states
+//Container for states already used
 const statesUsed = [];
 //Shuffling the states, picking the last one, and embedding it to mainObject
 const pickState = function () {
@@ -200,8 +200,7 @@ const pickState = function () {
   mainObj.hiddenArr = new Array(mainObj.goalLength).fill('*');
 
   mainObj.counter = 0;
-  console.log(mainObj);
-  console.log(statesUsed);
+  
 };
 //This is Knuth (Fisher - Yates) shuffle alghorithm
 function shuffle(array) {
