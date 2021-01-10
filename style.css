@@ -185,8 +185,8 @@ p#goal {
   position: relative;
   background: rgba(51, 51, 51, 1);
   width: 30%;
-/*   height: 30%; */
-  top: 40%;
+  height: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 1.5rem 1rem;
