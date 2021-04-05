@@ -6,13 +6,13 @@ const button = document.getElementById('btn');
 const goal = document.getElementById('goal');
 const holder = document.querySelector('.main-rect');
 const image = document.getElementById('image');
-//Tones
+//Game Tones
 const startTone = document.getElementById('start-tone');
 const missTone = document.getElementById('miss-tone');
 const hitTone = document.getElementById('hit-tone');
 const winTone = document.getElementById('win-tone');
 const lostTone = document.getElementById('lost-tone');
-//Modal
+//Modal elements
 const modal = document.querySelector('.modal');
 const modalTitle = document.querySelector('.modal-title');
 const modalButtonExit = document.querySelector('.cancel');
