@@ -257,7 +257,7 @@ const hideModal = function () {
   modal.classList.remove('show');
   modal.classList.add('hide');
 };
-//Checking for valid input. If input is valid, it is used as argument for main 'compareInput' f
+//Checking for valid input. If input is valid, it is used as argument for main 'compareInput' function
 const isInpValid = function (inp) {
   inp = input.value;
   let regTest = /[0-9,./;']/;
