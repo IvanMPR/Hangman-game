@@ -182,7 +182,7 @@ const states = [
 ];
 //Object containing arrays to compare in the game
 const mainObj = {};
-//Contatiner for previous guesses
+//Container for previous guesses
 let inputsContainer = [];
 //Container for already used states
 const statesUsed = [];
