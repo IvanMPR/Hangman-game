@@ -200,9 +200,8 @@ const pickState = function () {
   mainObj.hiddenArr = new Array(mainObj.goalLength).fill('*');
 
   mainObj.counter = 0;
-  
 };
-//This is Knuth (Fisher - Yates) shuffle alghorithm
+//This is Knuth (Fisher - Yates) shuffle algorithm
 function shuffle(array) {
   var currentIndex = array.length,
     temporaryValue,
