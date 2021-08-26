@@ -6,13 +6,13 @@ const button = document.getElementById('btn');
 const goal = document.getElementById('goal');
 const holder = document.querySelector('.main-rect');
 const image = document.getElementById('image');
-//Tones
+//Game Tones
 const startTone = document.getElementById('start-tone');
 const missTone = document.getElementById('miss-tone');
 const hitTone = document.getElementById('hit-tone');
 const winTone = document.getElementById('win-tone');
 const lostTone = document.getElementById('lost-tone');
-//Modal
+//Modal elements
 const modal = document.querySelector('.modal');
 const modalTitle = document.querySelector('.modal-title');
 const modalButtonExit = document.querySelector('.cancel');
@@ -184,7 +184,7 @@ const states = [
 const mainObj = {};
 //Container for previous guesses
 let inputsContainer = [];
-//Container for already used states
+//Container for states already used
 const statesUsed = [];
 //Shuffling the states, picking the last one, and embedding it to mainObject
 const pickState = function () {
@@ -200,8 +200,7 @@ const pickState = function () {
   mainObj.hiddenArr = new Array(mainObj.goalLength).fill('*');
 
   mainObj.counter = 0;
-  console.log(mainObj);
-  console.log(statesUsed);
+  
 };
 //This is Knuth (Fisher - Yates) shuffle alghorithm
 function shuffle(array) {
@@ -258,7 +257,7 @@ const hideModal = function () {
   modal.classList.remove('show');
   modal.classList.add('hide');
 };
-//Checking for valid input. If input is valid, it is used as argument for main 'compareInput' f
+//Checking for valid input. If input is valid, it is used as argument for main 'compareInput' function
 const isInpValid = function (inp) {
   inp = input.value;
   let regTest = /[0-9,./;']/;
